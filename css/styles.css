@@ -151,7 +151,9 @@ address {
   font-family: inherit;
 }
 
-.button.primary {
+.button.primary,
+.products .button.secondary:hover,
+.products .button.secondary:focus {
   color: var(--lighter);
   background-color: var(--accent);
 }
@@ -239,7 +241,6 @@ address {
   text-transform: uppercase;
 
   color: var(--lighter);
-  opacity: 0.73;
 }
 
 /* Advantages section */
@@ -259,11 +260,12 @@ address {
 }
 
 .advantages .icon-bg {
+  display: flex;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  text-align: center;
-  padding: 25px 0;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bg-secondary);
 }
 
@@ -388,11 +390,6 @@ address {
 
 /* Regular clients section */
 
-.section.regular {
-  padding-top: 45px;
-  padding-bottom: 94px;
-}
-
 /* list properties defined in prev section */
 
 .clients.list .item {
@@ -473,7 +470,8 @@ address {
   color: inherit;
 }
 
-.product-cards .link:hover {
+.product-cards .link:hover,
+.product-cards .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
